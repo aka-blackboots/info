@@ -45,6 +45,11 @@ module.exports = {
           label: "Docs",
         },
         {
+          href: "https://ifcjs.github.io/web-ifc-viewer/example/index",
+          label: "Demo",
+          position: "right",
+        },
+        {
           href: "https://discord.gg/FXfyR4XrKT",
           label: "Community",
           position: "right",
@@ -90,6 +95,23 @@ module.exports = {
             {
               label: "Twitch",
               href: "https://www.twitch.tv/ifc_js/about",
+            },
+          ],
+        },
+        {
+          title: "Try IFC.js",
+          items: [
+            {
+              label: "web-ifc",
+              href: "https://ifcjs.github.io/web-ifc/demo/",
+            },
+            {
+              label: "web-ifc-three",
+              href: "https://ifcjs.github.io/web-ifc-three/example/",
+            },
+            {
+              label: "web-ifc-viewer",
+              href: "https://ifcjs.github.io/web-ifc-viewer/example/index",
             },
           ],
         },
