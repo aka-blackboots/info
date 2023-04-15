@@ -27,7 +27,7 @@ ifcLoader.load("models/Example_model.ifc", (ifcModel) => scene.add(ifcModel));
 ```
 
 🏠🏠🏠
-With `web-ifc-three` you can load multiple models in the scene. Many of the API operations are executed on a specified model. To express on which model we want to operate we have to give its `ModelID`.
+With `web-ifc-three` you can load multiple models in the scene. To express on which model we want to operate we have to give its `ModelID`.
 
 🔍
 You can get the ID of a model through the property `modelID`.
@@ -37,14 +37,10 @@ const modelID = ifcModel.modelID;
 ```
 
 ✌
-There are two ways to access the API:
-
-- Through the instances of `IfcModel` that the `IfcLoader` generates with `load` and `loadAsync`.
-
-- Through `IfcLoader.IfcManager`.
+`web-ifc-three` APIs are accessed using `IfcLoader.IfcManager`.
 
 <IfcAlert>
-  Both <b>IfcModel</b> instances and <b>IfcLoader.IfcManager</b> can be used interchangeably to access the API. There's one difference: when using <b>IfcModel</b>, the ModelID never has to be given as an argument (it's known implicitly).
+  Accessing APIs on IfcModel is now deprecated and <b>IfcLoader.IfcManager</b> should be used.
 </IfcAlert>
 
 ## 🧰 Setup
